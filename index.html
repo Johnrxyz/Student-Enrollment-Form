@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+    <main>
+
+        <div class="instruction">
+            <h1>STUDENT ENROLLMENT FORM</h1> 
+            <h3>
+                <ol>
+                    <li>Fill in the form fields.</li>
+                    <li>Check your interests.</li>
+                    <li>Click "Enroll Now" to submit.</li>
+                </ol>
+            </h3>
+        </div>
+
+        <section id="form">  
+    
+            <div class="mainForm">
+                <label for="fullName">Fullname</label><br>
+                <input type="text" name="fullName" id="fullName" placeholder="First Name - M.I(optional) - Last Name" required>
+            </div>
+
+            <div class="mainForm">
+                <label for="email">Email</label>  <br>
+                <input type="email" name="email" id="email" placeholder="yourname@gmail.com" required>
+            </div>
+            
+            <div class="mainForm">
+                <label for="age">Age</label>  <br>
+                <input type="number" id="age" name="age" min="0" max="120" placeholder="18" required> 
+            </div>
+
+            <div class="mainForm" id="gender">
+                <label id="genderLbl">Gender</label>
+                
+                <div class="eachGender">
+                    <input type="radio" name="sex" value="male" id="male">
+                    <label style="font-weight: 400;" for="male">Male</label>
+                </div> 
+                
+                <div class="eachGender">
+                    <input type="radio" name="sex" value="female" id="male">
+                    <label style="font-weight: 400;" for="male">Female</label>
+                </div>
+
+            </div>
+            
+            <div class="mainForm">
+                <label for="course">Course:</label><br>
+                <select name="course" id="course">
+                    <option value="bsit">BSIT</option>
+                    <option value="bssw">BSSW</option>
+                    <option value="bspa">BSPA</option>
+                    <option value="bsais">BSAIS</option>
+                    <option value="dhrs">DHRS</option>
+                    <option value="bse">BSE</option>
+                </select>
+            </div>
+            
+            
+            <div class="mainForm">
+                <label>Interests:</label><br> <br>
+                <div class="interest">
+                    <input type="checkbox" id="webdev" name="webdev">
+                    <label for="webdev" style="font-weight: 400;">Web Development</label>
+                </div>
+                
+                <div class="interest">
+                    <input type="checkbox" id="datasci" name="datasci">
+                    <label for="datasci" style="font-weight: 400;">Data Science</label>
+                </div>
+
+                <div class="interest">
+                    <input type="checkbox" id="networking" name="networking">
+                    <label for="networking" style="font-weight: 400;">Networking</label>
+                </div>
+
+                <div class="interest">
+                    <input type="checkbox" id="graphDesign" name="graphDesign">
+                    <label for="graphDesign" style="font-weight: 400;">Graphic Design</label>
+                </div>
+                
+                <div class="interest">
+                    <input type="checkbox" id="ML" name="ML">
+                    <label for="ML" style="font-weight: 400;">Machine Learning</label>
+                </div>
+            </div>
+
+            <input id="submit" type="submit" value="Enroll Now">
+        </section>
+            
+        <section id="dataTable">
+            <h3 class="enrolled">Enrolled Students</h3>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                </tr>
+
+                <tr>
+                    <td>023A-32651</td>
+                    <td>Ronjarnuk Gamboa</td>
+                    <td>ronjarnukgamboa@gmail.com</td>
+                    <td>66</td>
+                    <td>Male</td>
+                    <td>BSA</td>
+                </tr>
+
+                <tr>
+                    <td>023A-22222</td>
+                    <td>RanJurak Gambit</td>
+                    <td>ranJurakgambit@gmail.com</td>
+                    <td>36</td>
+                    <td>Female</td>
+                    <td>BSPA</td>
+                </tr>
+
+                <tr>
+                    <td>023A-65241</td>
+                    <td>Ceddy Dela Cruz</td>
+                    <td>ceddydelacruz@gmail.com</td>
+                    <td>29</td>
+                    <td>Male</td>
+                    <td>BSSW</td>
+                </tr>
+
+                <tr>
+                    <td>023A-16612</td>
+                    <td>Mike Tyson Gamba</td>
+                    <td>mikegamba@gmail.com</td>
+                    <td>21</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                </tr>
+
+                <tr>
+                    <td>023A-10764</td>
+                    <td>Johnrey Mansilungan</td>
+                    <td>mansilungan.johnrey.dll@gmail.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                </tr>
+
+                <tr>
+                    <td>023A-11252</td>
+                    <td>Alberto Morality</td>
+                    <td>AlbertoMorality@gmail.com</td>
+                    <td>39</td>
+                    <td>Male</td>
+                    <td>BSE</td>
+                </tr>
+
+                <tr>
+                    <td>023A-12412</td>
+                    <td>Sell Jhoy Villamore</td>
+                    <td>joyvillamore@gmail.com</td>
+                    <td>17</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                </tr>
+
+                <tr>
+                    <td>023A-11241</td>
+                    <td>Sejie Momrepo</td>
+                    <td>SejieMomrepo@gmail.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
