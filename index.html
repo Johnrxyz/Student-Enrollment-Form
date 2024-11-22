@@ -27,79 +27,80 @@
         </div>
 
         <section id="form">  
-    
-            <div class="mainForm">
-                <label for="fullName"><i>Fullname</i></label><br>
-                <input type="text" name="fullName" id="fullName" placeholder="First Name - M.I(optional) - Last Name" required>
-            </div>
-
-            <div class="mainForm">
-                <label for="email"><i>Email</i></label>  <br>
-                <input type="email" name="email" id="email" placeholder="yourname@gmail.com" required>
-            </div>
-            
-            <div class="mainForm">
-                <label for="age"><i>Age</i></label>  <br>
-                <input type="number" id="age" name="age" min="0" max="120" placeholder="18" required> 
-            </div>
-
-            <div class="mainForm" id="gender">
-                <label id="genderLbl"><i>Gender</i></label>
-                
-                <div class="eachGender">
-                    <input type="radio" name="sex" value="male" id="male">
-                    <label style="font-weight: 400;" for="male">Male</label>
-                </div> 
-                
-                <div class="eachGender">
-                    <input type="radio" name="sex" value="female" id="male">
-                    <label style="font-weight: 400;" for="male">Female</label>
+            <form action="">
+                <div class="mainForm">
+                    <label for="fullName"><i>Fullname</i></label><br>
+                    <input type="text" name="fullName" id="fullName" placeholder="First Name - M.I(optional) - Last Name" required>
                 </div>
 
-            </div>
-            
-            <div class="mainForm">
-                <label for="course"><i>Course</i></label><br>
-                <select name="course" id="course">
-                    <option value="bsit">BSIT</option>
-                    <option value="bssw">BSSW</option>
-                    <option value="bspa">BSPA</option>
-                    <option value="bsais">BSAIS</option>
-                    <option value="dhrs">DHRS</option>
-                    <option value="bse">BSE</option>
-                </select>
-            </div>
-            
-            
-            <div class="mainForm">
-                <label><i>Interests</i></label><br> <br>
-                <div class="interest">
-                    <input type="checkbox" id="webdev" name="webdev">
-                    <label for="webdev" style="font-weight: 400;">Web Development</label>
+                <div class="mainForm">
+                    <label for="email"><i>Email</i></label>  <br>
+                    <input type="email" name="email" id="email" placeholder="yourname@gmail.com" required>
                 </div>
                 
-                <div class="interest">
-                    <input type="checkbox" id="datasci" name="datasci">
-                    <label for="datasci" style="font-weight: 400;">Data Science</label>
+                <div class="mainForm">
+                    <label for="age"><i>Age</i></label>  <br>
+                    <input type="number" id="age" name="age" min="0" max="120" placeholder="18" required> 
                 </div>
 
-                <div class="interest">
-                    <input type="checkbox" id="networking" name="networking">
-                    <label for="networking" style="font-weight: 400;">Networking</label>
-                </div>
+                <div class="mainForm" id="gender">
+                    <label id="genderLbl"><i>Gender</i></label>
+                    
+                    <div class="eachGender">
+                        <input type="radio" name="sex" value="male" id="male">
+                        <label style="font-weight: 400;" for="male">Male</label>
+                    </div> 
+                    
+                    <div class="eachGender">
+                        <input type="radio" name="sex" value="female" id="male">
+                        <label style="font-weight: 400;" for="male">Female</label>
+                    </div>
 
-                <div class="interest">
-                    <input type="checkbox" id="graphDesign" name="graphDesign">
-                    <label for="graphDesign" style="font-weight: 400;">Graphic Design</label>
                 </div>
                 
-                <div class="interest">
-                    <input type="checkbox" id="ML" name="ML">
-                    <label for="ML" style="font-weight: 400;">Machine Learning</label>
+                <div class="mainForm">
+                    <label for="course"><i>Course</i></label><br>
+                    <select name="course" id="course">
+                        <option value="bsit">BSIT</option>
+                        <option value="bssw">BSSW</option>
+                        <option value="bspa">BSPA</option>
+                        <option value="bsais">BSAIS</option>
+                        <option value="dhrs">DHRS</option>
+                        <option value="bse">BSE</option>
+                    </select>
                 </div>
-            </div>
+                
+                
+                <div class="mainForm">
+                    <label><i>Interests</i></label><br> <br>
+                    <div class="interest">
+                        <input type="checkbox" id="webdev" name="webdev">
+                        <label for="webdev" style="font-weight: 400;">Web Development</label>
+                    </div>
+                    
+                    <div class="interest">
+                        <input type="checkbox" id="datasci" name="datasci">
+                        <label for="datasci" style="font-weight: 400;">Data Science</label>
+                    </div>
 
-            <input id="submit" type="submit" value="Enroll Now">
+                    <div class="interest">
+                        <input type="checkbox" id="networking" name="networking">
+                        <label for="networking" style="font-weight: 400;">Networking</label>
+                    </div>
+
+                    <div class="interest">
+                        <input type="checkbox" id="graphDesign" name="graphDesign">
+                        <label for="graphDesign" style="font-weight: 400;">Graphic Design</label>
+                    </div>
+                    
+                    <div class="interest">
+                        <input type="checkbox" id="ML" name="ML">
+                        <label for="ML" style="font-weight: 400;">Machine Learning</label>
+                    </div>
+                </div>
+
+                <input type="submit" id="submit" value="Enroll Now">
+            </form>
         </section>
             
         <section id="dataTable">
